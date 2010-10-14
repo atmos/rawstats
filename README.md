@@ -1,7 +1,7 @@
 rawstats
 ========
 
-How to host awstats under ruby or rack.
+How to host [awstats](http://awstats.sourceforge.net/) under ruby or rack.
 
 Running
 -------
