@@ -1,7 +1,7 @@
-pages-stats
-===========
+rawstats
+========
 
-Hoping to shed some light on what kind of traffic the pages server sends.
+How to host awstats under ruby or rack.
 
 Running
 -------
@@ -9,6 +9,11 @@ Running
     % bundle install --binstubs
     % bin/rackup
     % open http://localhost:9292
+
+Cron
+----
+
+    % bin/daily
 
 Contributing
 ------------
