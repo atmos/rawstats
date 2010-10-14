@@ -1,0 +1,11 @@
+GEM
+  specs:
+    rack (1.2.1)
+    rack-legacy (0.1.5)
+      rack
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rack-legacy

@@ -1,0 +1,1 @@
+templatize the config file

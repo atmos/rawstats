@@ -1,0 +1,5 @@
+.DS_Store
+local-data
+.bundle
+bin/rack_legacy
+bin/rackup

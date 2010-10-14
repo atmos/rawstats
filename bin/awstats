@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+require 'fileutils'
+root    = File.expand_path(File.dirname(__FILE__ + "/../../.."))
+args    = ARGV
+awstats = "#{root}/public/cgi-bin/awstats.pl"
+
+case ARGV[0]
+  when '--run'
+    ARGV.shift
+    args = [ "-config=pages", ARGV ].flatten
+    exec awstats, *args
+  else
+    FileUtils.mkdir_p "#{root}/public/2010"
+    args = [ "-config=pages", "-output", "-staticlinks" ]
+    [ '09', '10' ].each do |month|
+      `#{awstats} #{args.join(" ")} --month=#{month} > #{root}/public/2010/#{month}.html`
+    end
+end
+
+# vim: ft=ruby
