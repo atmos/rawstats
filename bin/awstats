@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
-require 'fileutils'
-root    = File.expand_path(File.dirname(__FILE__ + "/../../.."))
+root = File.expand_path(File.dirname(__FILE__ + "/../../.."))
+require "rubygems"
+require "#{root}/lib/rawstats"
+
 args    = ARGV
 awstats = "#{root}/public/cgi-bin/awstats.pl"
 

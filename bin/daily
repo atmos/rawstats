@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
 root    = File.expand_path(File.dirname(__FILE__ + "/../../.."))
+require "rubygems"
+require "#{root}/lib/rawstats"
+
 awstats = "#{root}/public/cgi-bin/awstats.pl"
 log_dir = ENV["NGINX_LOG_DIR"] || "/var/log/nginx/access_logs"
-
 
 exec "perl", awstats, "-config=default", "-update"
