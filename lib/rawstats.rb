@@ -25,7 +25,7 @@ module Rawstats
     end
 
     def log_file_command
-      ENV['RAWSTATS_LOG_COMMAND'] || "gzip -c -d /home/atmos/rawstats/logs/*log.*.gz |"
+      ENV['RAWSTATS_LOG_COMMAND'] || "gzip -c -d /var/log/nginx/access_logs/*.log.*.gz |"
     end
 
     def config_file
