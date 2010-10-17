@@ -48,7 +48,7 @@
 # If there are several log files from load balancing servers :
 # Example: "/pathtotools/logresolvemerge.pl *.log |"
 #
-LogFile="gzip -c -d /home/atmos/rawstats/logs/*log.*.gz |"
+LogFile="<%= log_file_command %>"
 
 # Enter the log file type you want to analyze.
 # Possible values:
@@ -199,8 +199,7 @@ DNSLookup=2
 # Example: "C:/awstats_data_dir"
 # Default: "."          (means same directory as awstats.pl)
 #
-#DirData="/home/atmos/pages-stats/data"
-DirData="/home/atmos/rawstats/local-data"
+DirData="<%= data_directory %>"
 
 
 # Relative or absolute web URL of your awstats cgi-bin directory.

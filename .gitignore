@@ -3,3 +3,4 @@ local-data
 .bundle
 bin/rack_legacy
 bin/rackup
+public/cgi-bin/awstats.conf
