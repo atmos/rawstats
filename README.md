@@ -22,7 +22,7 @@ By default the data is set to `<rawstats root>/local-data`.  If you need to chan
 
 ### LogFile Config Option
 
-By default the data is set to `gzip -c -d /var/log/nginx/access_logs/*.log.*.gz`.  If you need to change that then you should export the `RAWSTATS_LOG_COMMAND` environmental variable, it'll automatically use that if set.  For more information on this variable, checkout the [awstats docs on this option][logfile].
+By default the data is set to `gzip -c -d /var/log/nginx/access_logs/*.log.*.gz |`.  If you need to change that then you should export the `RAWSTATS_LOG_COMMAND` environmental variable, it'll automatically use that if set.  For more information on this variable, checkout the [awstats docs on this option][logfile].
 
 Cron
 ----
